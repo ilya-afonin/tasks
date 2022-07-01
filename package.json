@@ -1,0 +1,13 @@
+{
+  "name": "tasks",
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "client": "yarn --cwd client start",
+    "start": "concurrently \"yarn run server\" \"yarn run client\""
+  },
+  "dependencies": {
+    "concurrently": "^7.2.2",
+    "prettier": "^2.7.1"
+  }
+}
+
