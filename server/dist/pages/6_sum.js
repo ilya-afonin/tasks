@@ -8,13 +8,12 @@
 //     }
 //     return a;
 // }
-
 function sum(number) {
-    let value = number
+    let value = number;
     return function a(num) {
-        value = num + value
-        console.log(value)
-        return a
-    }
+        value = num + value;
+        console.log(value);
+        return a;
+    };
 }
-sum(5)(6)(56)
+sum(5)(6)(56);
